@@ -1,0 +1,152 @@
+header {
+    height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left {
+    position: relative;
+    left: 50px
+}
+
+.left .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.left .header-logo .brand-text {
+    position: relative;
+
+}
+
+.center {
+    width: 665px;
+    display: flex;
+    align-items: center;
+    justify-content: start
+}
+
+#search-inp {
+    height: 40px;
+    width: 421px;
+    padding: 0px 0px 0px 5px;
+    border: 2px solid #0D6EFD;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#category {
+    height: 40px;
+    width: 145px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0px 0px 0px 5px;
+    border: 2px solid #0D6EFD;
+    border-left: none;
+    outline: none;
+}
+
+.search-btn {
+    height: 40px;
+    width: 100px;
+    background: linear-gradient(#0D6EFD, #0D6EFD);
+    color: #fff;
+    border: 2px solid #0D6EFD;
+    font-size: 16px;
+    font-weight: 500;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+    right: 50px;
+}
+
+.right .link {
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    align-items: center;
+    color: #8B96A5;
+    text-decoration: none;
+}
+
+.right .link .icon {
+    width: 25px;
+    height: 25px;
+    color: #8B96A5
+}
+
+.right .link .header-text {
+    font-size: 12px;
+    font-weight: 400
+}
+
+nav {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 16px;
+    font-weight: 500;
+    border-top: 2px solid #8b96a52a;
+    border-bottom: 2px solid #8b96a52a;
+}
+
+.nav-left {
+    width: 70%;
+    position: relative;
+    left: 10px;
+}
+
+.list1 {
+
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 35px;
+    position: relative;
+    left: 70px;
+
+}
+
+#hamburger {
+    height: 16px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    gap: 5px;
+}
+
+.nav-Right {}
+
+.nav-Right .list2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap: 40px;
+    position: relative;
+    right: 68px;
+}
+
+.icon {
+    margin: 0 10px;
+}
