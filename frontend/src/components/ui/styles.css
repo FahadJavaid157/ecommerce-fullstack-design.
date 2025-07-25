@@ -159,35 +159,53 @@ footer {
 .up {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    gap: 90px;
     height: 256px;
-    border: 2px solid green
+    position: relative;
+    left: 130px
 }
 
-.up .box {
-    border: 2px solid red
-}
+.up .box {}
 
 .up .box1 {
     width: 276px;
     height: 157px;
-    border: 2px solid green;
-    font-size: 16px;
+
+    font-size: 14px;
     font-weight: 400;
 }
 
 .imgs {
-    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0px 0px 20px 0px;
+}
+
+.up .text {
+    margin-bottom: 24px;
+}
+
+.up .logos {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.social {
+    height: 32px;
+    width: 32px;
+    background-color: #8B96A5;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    border-radius: 100px;
 }
 
 .up .box2 {
     width: 81px;
     height: 137px;
-    border: 2px solid Yellow;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -200,16 +218,14 @@ h4 {
 .up .box3 {
     width: 90px;
     height: 137px;
-    border: 2px solid Yellow;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .up .box4 {
-    width: 108px;
+    width: 120px;
     height: 137px;
-    border: 2px solid Yellow;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -218,7 +234,6 @@ h4 {
 .up .box5 {
     width: 108px;
     height: 137px;
-    border: 2px solid Yellow;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -227,7 +242,6 @@ h4 {
 .up .box6 {
     width: 124px;
     height: 129px;
-    border: 2px solid Yellow;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -238,4 +252,26 @@ h4 {
     font-size: 16px;
     font-weight: 400;
     color: #000;
+}
+
+.down {
+    height: 68px;
+    background-color: #DEE2E7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.down .state {
+    display: flex;
+    position: relative;
+    right: 135px;
+    gap: 10px;
+    text-decoration: none;
+    color: #000
+}
+
+.copy-right {
+    position: relative;
+    left: 130px;
 }

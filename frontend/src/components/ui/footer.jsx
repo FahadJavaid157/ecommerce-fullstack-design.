@@ -19,21 +19,23 @@ export function Footer() {
               Best information about the company gies here but now lorem ipsum
               is
             </p>
-            <span className="social">
-              <FaFacebookF />
-            </span>
-            <span className="social">
-              <CiTwitter />
-            </span>
-            <span className="social">
-              <FaLinkedinIn />
-            </span>
-            <span className="social">
-              <FaInstagram />
-            </span>
-            <span className="social">
-              <FaYoutube />
-            </span>
+            <div className="logos">
+              <span className="social">
+                <FaFacebookF />
+              </span>
+              <span className="social">
+                <CiTwitter />
+              </span>
+              <span className="social">
+                <FaLinkedinIn />
+              </span>
+              <span className="social">
+                <FaInstagram />
+              </span>
+              <span className="social">
+                <FaYoutube />
+              </span>
+            </div>
           </div>
           <div className="box box2">
             <h4>About</h4>
@@ -80,6 +82,14 @@ export function Footer() {
               />
             </Link>
           </div>
+        </div>
+        <div className="down">
+          <p className="copy-right">© 2023 Ecommerce. </p>
+
+          <Link className="state">
+            <img src="/public/images/flag.png" alt="flags" />
+            <p>English</p>
+          </Link>
         </div>
       </footer>
     </>
