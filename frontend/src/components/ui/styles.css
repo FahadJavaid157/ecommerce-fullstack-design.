@@ -150,3 +150,92 @@ nav {
 .icon {
     margin: 0 10px;
 }
+
+footer {
+    height: 324px;
+    border: 2px solid;
+}
+
+.up {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 256px;
+    border: 2px solid green
+}
+
+.up .box {
+    border: 2px solid red
+}
+
+.up .box1 {
+    width: 276px;
+    height: 157px;
+    border: 2px solid green;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.imgs {
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.up .box2 {
+    width: 81px;
+    height: 137px;
+    border: 2px solid Yellow;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+.up .box3 {
+    width: 90px;
+    height: 137px;
+    border: 2px solid Yellow;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.up .box4 {
+    width: 108px;
+    height: 137px;
+    border: 2px solid Yellow;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.up .box5 {
+    width: 108px;
+    height: 137px;
+    border: 2px solid Yellow;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.up .box6 {
+    width: 124px;
+    height: 129px;
+    border: 2px solid Yellow;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.up .link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
