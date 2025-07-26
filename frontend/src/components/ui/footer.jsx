@@ -66,7 +66,7 @@ export function Footer() {
             <Link className="link">My Orders</Link>
           </div>
           <div className="box box6">
-            <h4>Get app</h4>
+            <h4 id="text">Get app</h4>
             <Link className="link">
               <img
                 src="/public/images/market-button.png"
