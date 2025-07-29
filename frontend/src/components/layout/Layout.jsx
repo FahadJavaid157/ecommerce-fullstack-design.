@@ -7,7 +7,9 @@ export function Layout() {
     <>
       <Header />
       <Navbar />
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
       <Footer />
     </>
   );
