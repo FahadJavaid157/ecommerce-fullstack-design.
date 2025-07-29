@@ -166,10 +166,13 @@ footer {
     gap: 90px;
     height: 256px;
     position: relative;
-    left: 130px
+    left: 130px;
+    width: 100%;
 }
 
-.up .box {}
+.up .box {
+    width: 100%;
+}
 
 .up .box1 {
     width: 276px;
