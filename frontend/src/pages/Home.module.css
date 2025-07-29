@@ -410,5 +410,23 @@
 .suppliers {
     height: 8.6rem;
     width: 78rem;
-    margin: 10px auto
+    margin: 10px auto;
+
 }
+
+.suppliers .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    gap: 15px 32px;
+    margin: 10px 0px 0px 0px;
+}
+
+.suppliers .grid .container {
+    width: 221px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+

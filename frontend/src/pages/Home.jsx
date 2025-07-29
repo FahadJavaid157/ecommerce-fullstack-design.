@@ -8,6 +8,7 @@ import { Item } from "../components/ui/items";
 import item from "../api/home2.json";
 import services from "../api/services.json";
 import flags from "../api/flags.json";
+import { Newsletter } from "../components/ui/News_letter";
 
 export function Home() {
   return (
@@ -283,12 +284,15 @@ export function Home() {
                   </div>
                   <div className={style.textbox}>
                     <p>{item.title}</p>
-                    <p>{item.name}</p>
+                    <p style={{ color: "#8B96A5" }}>{item.name}</p>
                   </div>
                 </div>
               </li>
             ))}
           </ul>
+        </section>
+        <section>
+          <Newsletter />
         </section>
       </main>
     </>

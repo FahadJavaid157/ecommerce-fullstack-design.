@@ -284,3 +284,24 @@ h4 {
     position: relative;
     top: -3px
 }
+
+.container {
+    width: 100%;
+    height: 190px;
+    border: 1px solid transparent;
+    background-color: #DEE2E7;
+}
+
+.container .box {
+    width: 617px;
+    height: 113px;
+    margin: 38px auto;
+}
+
+.container .email {
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
