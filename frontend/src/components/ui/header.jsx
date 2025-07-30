@@ -2,8 +2,14 @@ import "./styles.css";
 import { Link } from "react-router";
 import { BiSolidUser } from "react-icons/bi";
 import { MdMessage, MdShoppingCart } from "react-icons/md";
+import { IoSearchOutline } from "react-icons/io5";
 import { FaHeart } from "react-icons/fa6";
+import { useState } from "react";
 export function Header() {
+  const [showSearchBox, setShowSearchBox] = useState(false);
+  const handleSearch = () => {
+    setShowSearchBox((prev) => !prev);
+  };
   return (
     <>
       <header>
@@ -21,7 +27,7 @@ export function Header() {
             />
           </Link>
         </div>
-        <div className="center">
+        <div className={"center"}>
           <input
             type="text"
             name="Search"

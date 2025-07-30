@@ -1,15 +1,17 @@
 header {
-    height: 86px;
-    max-width: 100vw;
+    height: 100px;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #fff;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #ffffff;
+    position: relative;
+    padding: 10px 0px 0px 0px;
 }
 
 .left {
     position: relative;
-    left: 50px
+    left: 1.5rem
 }
 
 .left .header-logo {
@@ -18,20 +20,28 @@ header {
     gap: 5px;
 }
 
+.left .header-logo .logo {
+    height: 30px;
+}
+
 .left .header-logo .brand-text {
     position: relative;
+    height: 20px;
 }
 
 .center {
-    width: 665px;
+    width: 90%;
     display: flex;
     align-items: center;
-    justify-content: start
+    justify-content: start;
+    position: absolute;
+    bottom: 10px;
+    left: 23px;
 }
 
 #search-inp {
-    height: 40px;
-    width: 421px;
+    height: 30px;
+    width: 60%;
     padding: 0px 0px 0px 5px;
     border: 2px solid #0D6EFD;
     outline: none;
@@ -42,23 +52,22 @@ header {
 }
 
 #category {
-    height: 40px;
-    width: 145px;
-    font-size: 16px;
+    height: 30px;
+    width: 25%;
+    font-size: 10px;
     font-weight: 400;
-    padding: 0px 0px 0px 5px;
     border: 2px solid #0D6EFD;
     border-left: none;
     outline: none;
 }
 
 .search-btn {
-    height: 40px;
-    width: 100px;
+    height: 30px;
+    width: 55px;
     background: linear-gradient(#0D6EFD, #0D6EFD);
     color: #fff;
     border: 2px solid #0D6EFD;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -69,9 +78,9 @@ header {
 .right {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 5px;
     position: relative;
-    right: 50px;
+    right: 1.5rem;
 }
 
 .right .link {
@@ -84,8 +93,8 @@ header {
 }
 
 .right .link .icon {
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     color: #8B96A5
 }
 
@@ -97,10 +106,10 @@ header {
 nav {
     background-color: #fff;
     height: 56px;
-    max-width: 100vw;
-    display: flex;
+    width: 100%;
+    display: none;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-size: 16px;
     font-weight: 500;
     border-top: 2px solid #8b96a52a;
@@ -109,23 +118,18 @@ nav {
 
 .nav-left {
     width: 70%;
-    position: relative;
-    left: 10px;
 }
 
 .list1 {
     display: flex;
     align-items: center;
     list-style-type: none;
-    gap: 35px;
-    position: relative;
-    left: 70px;
 }
 
 #hamburger {
     height: 16px;
     width: 20px;
-    margin-right: 10px;
+    /* margin-right: 15px; */
 }
 
 .nav-link {
@@ -133,29 +137,28 @@ nav {
     align-items: center;
     color: black;
     text-decoration: none;
-    gap: 5px;
 }
 
-.nav-Right {}
+.nav-Right {
+    position: relative;
+}
 
 .nav-Right .list2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style: none;
-    gap: 40px;
-    position: relative;
-    right: 68px;
 }
 
 .icon {
-    margin: 0 10px;
+    /* margin: 0 10px; */
 }
 
 footer {
     height: 324px;
-    max-width: 100vw;
+    width: 100%;
     background-color: #fff;
+    font-size: 12px;
 
 }
 
@@ -163,12 +166,10 @@ footer {
     background-color: #fff;
     display: flex;
     align-items: center;
-    gap: 90px;
+    gap: 30px;
     height: 256px;
-    position: relative;
-    left: 130px;
     width: 100%;
-    max-width: 1250px;
+    margin: 0px auto;
 }
 
 .up .box {
@@ -178,9 +179,10 @@ footer {
 .up .box1 {
     width: 276px;
     height: 157px;
-
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
+    position: relative;
+    left: 1.5rem
 }
 
 .imgs {
@@ -191,7 +193,8 @@ footer {
 }
 
 .up .text {
-    margin-bottom: 24px;
+    width: 80%;
+    margin-bottom: 20px;
 }
 
 .up .logos {
@@ -201,8 +204,8 @@ footer {
 }
 
 .social {
-    height: 32px;
-    width: 32px;
+    height: 20px;
+    width: 20px;
     background-color: #8B96A5;
     color: #fff;
     display: flex;
@@ -217,6 +220,8 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    position: relative;
+    display: none;
 }
 
 h4 {
@@ -228,31 +233,40 @@ h4 {
     height: 137px;
     display: flex;
     flex-direction: column;
+    position: relative;
     gap: 10px;
+    display: none;
 }
 
 .up .box4 {
     width: 120px;
     height: 137px;
     display: flex;
+    position: relative;
     flex-direction: column;
     gap: 10px;
+    display: none;
 }
 
 .up .box5 {
     width: 108px;
     height: 137px;
     display: flex;
+    position: relative;
     flex-direction: column;
     gap: 10px;
+    display: none;
 }
 
 .up .box6 {
     width: 124px;
     height: 129px;
     display: flex;
+    position: relative;
     flex-direction: column;
     gap: 10px;
+    position: relative;
+    right: 1.5rem
 }
 
 .up .link {
@@ -273,15 +287,17 @@ h4 {
 .down .state {
     display: flex;
     position: relative;
-    right: 135px;
-    gap: 10px;
+    right: 1.5rem;
+    gap: 2px;
     text-decoration: none;
-    color: #000
+    font-size: 12px;
+    color: #000;
 }
 
 .copy-right {
     position: relative;
-    left: 130px;
+    left: 1.5rem;
+    font-size: 12px;
 }
 
 #text {
@@ -308,4 +324,738 @@ h4 {
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+@media (min-width:768px) and (max-width: 1023.98px) {
+    header {
+        height: 86px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ffffff;
+    }
+
+    .center {
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: static;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        position: relative;
+        right: 1.5rem;
+    }
+
+    #category {
+        height: 30px;
+        width: 25%;
+
+    }
+
+    .search-btn {
+        height: 30px;
+        width: 3.5rem;
+    }
+
+    .right .link .icon {
+        width: 20px;
+        height: 20px;
+        color: #8B96A5
+    }
+
+    nav {
+        display: flex;
+        font-size: 12px;
+    }
+
+    .nav-left {
+        width: 70%;
+        position: relative;
+        left: 1.5rem;
+    }
+
+    .list1 {
+        gap: 10px;
+        position: relative;
+        left: 0px;
+    }
+
+    #hamburger {
+        height: 12px;
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    .icon {
+        margin: 0 5px;
+    }
+
+    .nav-Right {
+        position: relative;
+        right: 1.5rem;
+    }
+
+    .nav-Right .list2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        gap: 10px;
+    }
+
+    .up {
+        gap: 40px;
+    }
+
+    .up .text {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .up .box .link {
+        font-size: 12px;
+    }
+
+    .up .box2 {
+        display: flex;
+    }
+
+    .up .box3 {
+        display: flex;
+    }
+
+    .up .box4 {
+        display: flex;
+    }
+}
+
+@media (min-width:1024px) and (max-width: 1279.98px) {
+    header {
+        height: 86px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ffffff;
+    }
+
+    .left .header-logo .logo {
+        height: 44px;
+    }
+
+    .left .header-logo .brand-text {
+        position: relative;
+        height: 21px;
+    }
+
+    .center {
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: static;
+    }
+
+    .left {
+        position: relative;
+        left: 3.5rem
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        position: relative;
+        right: 3.5rem;
+    }
+
+    .right .link .icon {
+        width: 20px;
+        height: 20px;
+        color: #8B96A5
+    }
+
+    nav {
+        display: flex;
+        font-size: 12px;
+    }
+
+    .nav-left {
+        width: 70%;
+        position: relative;
+        left: 3.5rem;
+    }
+
+    .list1 {
+        gap: 15px;
+        position: relative;
+        left: 0px;
+    }
+
+    #hamburger {
+        height: 12px;
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    .icon {
+        margin: 0 8px;
+    }
+
+    .nav-Right {
+        position: relative;
+        right: 3.5rem;
+    }
+
+    .nav-Right .list2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        gap: 10px;
+    }
+
+    .up {
+        gap: 30px;
+    }
+
+    .up .text {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .up .box .link {
+        font-size: 12px;
+    }
+
+    .up .box1 {
+        left: 3.5rem
+    }
+
+    .up .box2 {
+        display: flex;
+        left: 3.5rem
+    }
+
+    .up .box3 {
+        display: flex;
+        left: 3.5rem
+    }
+
+    .up .box4 {
+        display: flex;
+        left: 3.5rem
+    }
+
+    .up .box5 {
+        display: flex;
+        left: 2.5rem
+    }
+
+    .up .box6 {
+        right: 0;
+        left: 1rem
+    }
+
+    .down .state {
+        right: 3.5rem;
+    }
+
+    .copy-right {
+        left: 3.5rem;
+    }
+}
+
+@media (min-width:1280px) and (max-width: 1439.98px) {
+    header {
+        height: 86px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ffffff;
+    }
+
+    .left .header-logo .logo {
+        height: 44px;
+    }
+
+    .left .header-logo .brand-text {
+        position: relative;
+        height: 21px;
+    }
+
+    .center {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: static;
+    }
+
+    #search-inp {
+        width: 70%;
+    }
+
+    #category {
+        width: 20%;
+        font-size: 1rem;
+    }
+
+    .search-btn {
+        height: 30px;
+        width: 5rem;
+        font-size: 1rem;
+    }
+
+    .left {
+        position: relative;
+        left: 5rem
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        position: relative;
+        right: 5rem;
+    }
+
+    .right .link .icon {
+        width: 20px;
+        height: 20px;
+        color: #8B96A5
+    }
+
+    nav {
+        display: flex;
+        font-size: 16px;
+    }
+
+    .nav-left {
+        width: 70%;
+        position: relative;
+        left: 5rem;
+    }
+
+    .list1 {
+        gap: 25px;
+        position: relative;
+        left: 0px;
+    }
+
+    #hamburger {
+        height: 12px;
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    .icon {
+        margin: 0 10px;
+    }
+
+    .nav-Right {
+        position: relative;
+        right: 5rem;
+    }
+
+    .nav-Right .list2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        gap: 25px;
+    }
+
+    footer {
+        font-size: 16px
+    }
+
+    .up {
+        gap: 90px;
+        width: 90%;
+    }
+
+    .social {
+        height: 32px;
+        width: 32px;
+    }
+
+    .up .text {
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .up .box .link {
+        font-size: 16px;
+    }
+
+    .up .box1 {
+        left: 1rem
+    }
+
+    .up .box2 {
+        display: flex;
+        left: 1rem
+    }
+
+    .up .box3 {
+        display: flex;
+        left: 1rem
+    }
+
+    .up .box4 {
+        display: flex;
+        left: 1rem
+    }
+
+    .up .box5 {
+        display: flex;
+        left: 0;
+    }
+
+    .up .box6 {
+        right: 0;
+        right: 2rem
+    }
+
+    .down .state {
+        right: 5rem;
+    }
+
+    .copy-right {
+        left: 5rem;
+    }
+}
+
+@media (min-width:1440px) and (max-width:1479.98px) {
+    header {
+        height: 86px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ffffff;
+    }
+
+    .left .header-logo .logo {
+        height: 44px;
+    }
+
+    .left .header-logo .brand-text {
+        position: relative;
+        height: 21px;
+    }
+
+    .center {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: static;
+    }
+
+    #search-inp {
+        width: 70%;
+    }
+
+    #category {
+        width: 20%;
+        font-size: 1rem;
+    }
+
+    .search-btn {
+        height: 30px;
+        width: 6rem;
+        font-size: 1rem;
+    }
+
+    .left {
+        position: relative;
+        left: 5rem
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        position: relative;
+        right: 5rem;
+    }
+
+    .right .link .icon {
+        width: 20px;
+        height: 20px;
+        color: #8B96A5
+    }
+
+    nav {
+        display: flex;
+        font-size: 16px;
+    }
+
+    .nav-left {
+        width: 70%;
+        position: relative;
+        left: 5rem;
+    }
+
+    .list1 {
+        gap: 40px;
+        position: relative;
+        left: 0px;
+    }
+
+    #hamburger {
+        height: 12px;
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    .icon {
+        margin: 0 10px;
+    }
+
+    .nav-Right {
+        position: relative;
+        right: 5rem;
+    }
+
+    .nav-Right .list2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        gap: 30px;
+    }
+
+    footer {
+        font-size: 16px
+    }
+
+    .up {
+        position: relative;
+        gap: 90px;
+        width: 90%;
+    }
+
+    .social {
+        height: 32px;
+        width: 32px;
+    }
+
+    .up .text {
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .up .box .link {
+        font-size: 16px;
+    }
+
+    .up .box1 {
+        width: 100%;
+        left: 0;
+    }
+
+
+    .up .box2 {
+        display: flex;
+    }
+
+    .up .box3 {
+        display: flex;
+    }
+
+    .up .box4 {
+        display: flex;
+        left: 1rem;
+    }
+
+    .up .box5 {
+        display: flex;
+        left: 1rem;
+    }
+
+    .up .box6 {
+        right: 0;
+    }
+
+    .down .state {
+        right: 5rem;
+    }
+
+    .copy-right {
+        left: 5rem;
+    }
+}
+
+@media (min-width:1480px) and (min-width:1536px) {
+    header {
+        height: 86px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ffffff;
+    }
+
+    .left .header-logo .logo {
+        height: 44px;
+    }
+
+    .left .header-logo .brand-text {
+        position: relative;
+        height: 21px;
+    }
+
+    .center {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: static;
+    }
+
+    #search-inp {
+        width: 70%;
+    }
+
+    #category {
+        width: 20%;
+        font-size: 1rem;
+    }
+
+    .search-btn {
+        height: 30px;
+        width: 6rem;
+        font-size: 1rem;
+    }
+
+    .left {
+        position: relative;
+        left: 5rem
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        position: relative;
+        right: 5rem;
+    }
+
+    .right .link .icon {
+        width: 20px;
+        height: 20px;
+        color: #8B96A5
+    }
+
+    nav {
+        display: flex;
+        font-size: 16px;
+    }
+
+    .nav-left {
+        width: 70%;
+        position: relative;
+        left: 5rem;
+    }
+
+    .list1 {
+        gap: 40px;
+        position: relative;
+        left: 0px;
+    }
+
+    #hamburger {
+        height: 12px;
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    .icon {
+        margin: 0 10px;
+    }
+
+    .nav-Right {
+        position: relative;
+        right: 5rem;
+    }
+
+    .nav-Right .list2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        gap: 30px;
+    }
+
+    footer {
+        font-size: 16px
+    }
+
+    .up {
+        width: 90%;
+        position: relative;
+        left: 0;
+        gap: 120px;
+    }
+
+    .social {
+        height: 32px;
+        width: 32px;
+    }
+
+    .up .text {
+        width: 120%;
+        font-size: 16px;
+        margin-bottom: 20px
+    }
+
+    .up .box .link {
+        font-size: 16px;
+    }
+
+    .up .box1 {
+        left: 0
+    }
+
+    .up .box2 {
+        display: flex;
+    }
+
+    .up .box3 {
+        display: flex;
+    }
+
+    .up .box4 {
+        display: flex;
+        left: 1rem;
+    }
+
+    .up .box5 {
+        display: flex;
+        left: 1rem;
+    }
+
+    .up .box6 {
+        right: 1rem;
+    }
+
+    .down .state {
+        right: 5rem;
+    }
+
+    .copy-right {
+        left: 5rem;
+    }
 }
