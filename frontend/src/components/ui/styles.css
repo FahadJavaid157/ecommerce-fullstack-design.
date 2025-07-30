@@ -168,6 +168,7 @@ footer {
     position: relative;
     left: 130px;
     width: 100%;
+    max-width: 1250px;
 }
 
 .up .box {
