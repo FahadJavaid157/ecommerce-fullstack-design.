@@ -5,7 +5,7 @@ export function Item({ item }) {
       <li>
         <div
           style={{
-            width: "240px",
+            width: "170px",
             height: "127px",
             borderLeft: "1px solid #DEE2E7",
             borderBottom: "1px solid #DEE2E7",
@@ -22,7 +22,7 @@ export function Item({ item }) {
               width: "82px",
               position: "relative",
               top: "-30px",
-              left: "137px",
+              left: "60px",
             }}
           >
             <img

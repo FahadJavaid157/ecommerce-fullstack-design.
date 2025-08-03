@@ -87,14 +87,10 @@ export function Home() {
         </section>
         <section className={style.offer_section}>
           <div className={style.box1}>
-            <div
-              style={{ fontSize: "20px", fontWeight: "600", color: "#1C1C1C" }}
-            >
-              Deals and offers
-            </div>
-            <div style={{ color: "#8B96A5" }}>Hygiene equipments</div>
+            <div className={style.offerone}>Deals and offers</div>
+            <div className={style.offertwo}>Hygiene equipments</div>
             <br />
-            <img src="/public/images/time.png" alt="time" />
+            <img src="/public/images/time.png" alt="time" id={style.timer} />
           </div>
           <div className={style.box2}>
             <Deal_component
@@ -126,11 +122,7 @@ export function Home() {
         </section>
         <section className={style.Items}>
           <div className={style.box1}>
-            <div
-              style={{ fontSize: "20px", fontWeight: "600", color: "#1C1C1C" }}
-            >
-              Home and <br /> outdoor
-            </div>
+            <div className={style.home}>Home and outdoor</div>
             <Link className={style.btn}>
               <White_Button
                 to={"#"}
@@ -151,10 +143,14 @@ export function Home() {
         <section className={style.Items2}>
           <div className={style.box1}>
             <div
-              style={{ fontSize: "20px", fontWeight: "600", color: "#1C1C1C" }}
+              style={{
+                fontSize: "16px",
+                fontWeight: "600",
+                color: "#1C1C1C",
+                width: "100%",
+              }}
             >
-              Consumer <br />
-              electronics and <br /> gadgets
+              Consumer electronics and gadgets
             </div>
             <Link className={style.btn}>
               <White_Button
@@ -175,7 +171,7 @@ export function Home() {
         </section>
         <section className={style.supplier}>
           <div className={style.left}>
-            An easy way to send <br /> requests to all suppliers
+            An easy way to send requests to all suppliers
             <br />
             <span className={style.L_span}>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do

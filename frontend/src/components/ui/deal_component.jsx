@@ -1,3 +1,4 @@
+import "./styles.css";
 export function Deal_component({ img, title, discount }) {
   return (
     <>
@@ -7,6 +8,7 @@ export function Deal_component({ img, title, discount }) {
           width: "192px",
           borderLeft: "1px solid #DEE2E7",
         }}
+        className="deal_box"
       >
         <div
           style={{
