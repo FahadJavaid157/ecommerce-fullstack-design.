@@ -133,6 +133,8 @@
         width: 100%;
         height: 19rem;
         background-color: #FFFFFF;
+        border: 1px solid #DEE2E7;
+        border-radius: 6px;
         margin: 0px auto;
         display: flex;
         flex-direction: column;
@@ -186,6 +188,7 @@
         height: 16rem;
         margin: 20px auto;
         border: 1px solid #DEE2E7;
+        border-radius: 6px;
         background-color: #FFFFFF;
         display: flex;
         position: relative;
@@ -255,13 +258,6 @@
     }
 
     .Items2 .box1 {
-        /* width: 17.9rem;
-        height: 100%;
-        padding: 20px 0px 0px 20px;
-        background-image: url("public/images/image 98.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover; */
         width: 100%;
         height: 20%;
         padding: 10px 0px 0px 20px;
@@ -390,9 +386,7 @@
 
     .Recomendation .item_grid .grid {
         display: flex;
-        /* grid-template-columns: 1fr 1fr; */
         padding: 10px 0px 0px 10px;
-        /* gap: 20px 20px; */
         list-style-type: none;
         box-sizing: border-box;
 
@@ -445,7 +439,8 @@
         width: 78rem;
         height: 16rem;
         background-color: #FFFFFF;
-        margin: 30px auto;
+        margin: 50px auto;
+        padding-top: 10px;
         display: none;
     }
 
@@ -453,11 +448,13 @@
         height: 210px;
         width: 100%;
         margin-top: 24px;
+
     }
 
     .services .box .flex {
         list-style-type: none;
         display: flex;
+        width: 100%
     }
 
     .services .box .flex .container {
@@ -470,7 +467,7 @@
 
     .services .box .flex .container .imgBox {
         height: 120px;
-        width: 310px;
+        width: 100%;
     }
 
     .services .box .flex .container .imgBox .img {
@@ -482,7 +479,8 @@
         width: 215px;
         height: 44px;
         font-weight: 500;
-        margin: 16px 20px
+        margin: 16px 20px;
+
     }
 
     .suppliers {
@@ -543,6 +541,7 @@
             font-size: 16px;
             font-weight: 400;
         }
+
     }
 
     @media (min-width:1024px) and (max-width:1279.98px) {
@@ -611,6 +610,256 @@
             display: block;
 
         }
+
+        .offer_section {
+            width: 90%;
+            height: 15rem;
+            background-color: #FFFFFF;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .offer_section .box1 {
+            width: 285px;
+            height: 100%;
+            padding: 50px 0px 0px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            position: relative;
+            border-bottom: 1px solid #DEE2E7;
+        }
+
+        .offer_section .offerone {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1C1C1C;
+
+        }
+
+        .offer_section .offertwo {
+            color: #8B96A5;
+            position: relative;
+        }
+
+        #timer {
+            width: 198px;
+            height: 50px;
+            left: 0;
+            top: 0;
+        }
+
+        .offer_section .box2 {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            overflow: scroll;
+        }
+
+        .Items {
+            width: 90%;
+            height: 257px;
+            margin: 20px auto;
+            display: flex;
+
+        }
+
+        .Items .box1 {
+            width: 220px;
+            height: 100%;
+            background-image: url("public/images/image 92.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .home {
+            width: 100px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #1C1C1C;
+            margin-top: 10px;
+            position: relative;
+        }
+
+        .Items .box1 .btn {
+            text-decoration: none;
+            position: relative;
+            top: 18px
+        }
+
+        .Items .data {
+            height: 100%;
+            width: 50%;
+            position: relative;
+            top: 0;
+            left: 0;
+            overflow: unset;
+        }
+
+        .Items .data .list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            list-style-type: none;
+            box-sizing: border-box;
+            margin: 0
+        }
+
+        .Items2 {
+            width: 90%;
+            height: 257px;
+            margin: 20px auto;
+            display: flex;
+        }
+
+        .Items2 .box1 {
+            width: 220px;
+            height: 100%;
+            padding: 20px 0px 0px 20px;
+            background-image: url("public/images/image 98.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .Items2 .box1 .btn {
+            text-decoration: none;
+            position: relative;
+            top: 20px;
+        }
+
+        .Items2 .data {
+            height: 100%;
+            width: 50%;
+            position: relative;
+            top: 0;
+            overflow: unset;
+        }
+
+        .Items2 .data .list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            list-style-type: none;
+            box-sizing: border-box;
+            margin: 0
+        }
+
+        .supplier {
+            width: 90%;
+            height: 410px;
+        }
+
+        .supplier .left {
+            width: 40%;
+            font-size: 32px;
+            margin: 40px 0px 0px 40px;
+        }
+
+        .supplier .left .L_span {
+
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .right {
+            width: 30.6rem;
+            height: 21.6rem;
+            background-color: #ffffff;
+            margin: 30px 10px 0px 0px;
+            display: block;
+        }
+
+        .Recomendation {
+            width: 90%;
+            height: 650px;
+            margin: 30px auto 0px;
+        }
+
+        .Recomendation .item_grid {
+            width: 100%;
+            height: 100%;
+            margin-top: 24px;
+            overflow: hidden;
+        }
+
+        .Recomendation .item_grid .grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            padding: 10px 0px 0px 0px;
+            gap: 10px 10px;
+            list-style-type: none;
+            box-sizing: border-box;
+        }
+
+        .Recomendation .item_grid .grid .grid_container {
+            width: 100%;
+            height: 310px;
+            position: relative;
+            left: 0;
+        }
+
+        .Recomendation .item_grid .grid .grid_container .imgBox {
+            height: 70%;
+            width: 100%;
+        }
+
+        .services {
+            width: 90%;
+            height: 17rem;
+            display: block;
+        }
+
+        .services .box {
+            height: 210px;
+            width: 100%;
+            margin-top: 24px;
+            overflow: hidden;
+        }
+
+        .services .box .flex {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%
+        }
+
+        .services .box .flex .container {
+            height: 212px;
+            width: 100%;
+        }
+
+        .suppliers {
+            height: 8.6rem;
+            width: 90%;
+            margin: 0px auto;
+            display: block;
+            overflow: hidden;
+
+        }
+
+        .suppliers .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            list-style-type: none;
+            gap: 15px 32px;
+            margin: 10px 0px 0px 0px;
+        }
+
+        .suppliers .grid .container {
+            width: 221px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            gap: 20px
+        }
+
+
     }
 
     @media (min-width:1280px) and (max-width:1439.98px) {
@@ -694,6 +943,277 @@
             top: 20px;
             left: 45px
         }
+
+        .offer_section {
+            width: 90%;
+            height: 15rem;
+            background-color: #FFFFFF;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .offer_section .box1 {
+            width: 285px;
+            height: 100%;
+            padding: 50px 0px 0px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            position: relative;
+            border-bottom: 1px solid #DEE2E7;
+        }
+
+        .offer_section .offerone {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1C1C1C;
+
+        }
+
+        .offer_section .offertwo {
+            color: #8B96A5;
+            position: relative;
+        }
+
+        #timer {
+            width: 198px;
+            height: 50px;
+            left: -5px;
+            top: 0;
+        }
+
+        .offer_section .box2 {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        .Items {
+            width: 90%;
+            height: 257px;
+            margin: 20px auto;
+            display: flex;
+
+        }
+
+        .Items .box1 {
+            width: 220px;
+            height: 100%;
+            background-image: url("public/images/image 92.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .home {
+            width: 100px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #1C1C1C;
+            margin-top: 10px;
+            position: relative;
+        }
+
+        .Items .box1 .btn {
+            text-decoration: none;
+            position: relative;
+            top: 18px
+        }
+
+        .Items .data {
+            height: 100%;
+            width: 50%;
+            position: relative;
+            top: 0;
+            left: 0;
+            overflow: unset;
+        }
+
+        .Items .data .list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            list-style-type: none;
+            box-sizing: border-box;
+            margin: 0
+        }
+
+        .Items2 {
+            width: 90%;
+            height: 257px;
+            margin: 20px auto;
+            display: flex;
+        }
+
+        .Items2 .box1 {
+            width: 220px;
+            height: 100%;
+            padding: 20px 0px 0px 20px;
+            background-image: url("public/images/image 98.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .Items2 .box1 .btn {
+            text-decoration: none;
+            position: relative;
+            top: 20px;
+        }
+
+        .Items2 .data {
+            height: 100%;
+            width: 50%;
+            position: relative;
+            top: 0;
+            overflow: unset;
+        }
+
+        .Items2 .data .list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            list-style-type: none;
+            box-sizing: border-box;
+            margin: 0
+        }
+
+        .supplier {
+            width: 90%;
+            height: 410px;
+        }
+
+        .supplier .left {
+            width: 40%;
+            font-size: 32px;
+            margin: 40px 0px 0px 40px;
+        }
+
+        .supplier .left .L_span {
+
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .right {
+            width: 30.6rem;
+            height: 21.6rem;
+            background-color: #ffffff;
+            margin: 30px 40px 0px 0px;
+            display: block;
+        }
+
+        .supplier {
+            width: 90%;
+            height: 410px;
+        }
+
+        .supplier .left {
+            width: 40%;
+            font-size: 32px;
+            margin: 40px 0px 0px 40px;
+        }
+
+        .supplier .left .L_span {
+
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .right {
+            width: 30.6rem;
+            height: 21.6rem;
+            background-color: #ffffff;
+            margin: 30px 10px 0px 0px;
+            display: block;
+        }
+
+        .Recomendation {
+            width: 90%;
+            height: 696px;
+            margin: 30px auto 0px;
+        }
+
+        .Recomendation .item_grid {
+            height: 300px;
+            margin-top: 24px;
+            overflow: unset;
+        }
+
+        .Recomendation .item_grid .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            padding: 10px 0px 0px 0px;
+            gap: 10px 10px;
+            list-style-type: none;
+            box-sizing: border-box;
+        }
+
+        .Recomendation .item_grid .grid .grid_container {
+            width: 100%;
+            height: 310px;
+            border: 1px solid #DEE2E7;
+            position: relative;
+            left: 0;
+        }
+
+        .Recomendation .item_grid .grid .grid_container .imgBox {
+            height: 70%;
+            width: 100%;
+        }
+
+        .services {
+            width: 90%;
+            height: 17rem;
+            display: block;
+        }
+
+        .services .box {
+            height: 210px;
+            width: 100%;
+            margin-top: 24px;
+            overflow: hidden;
+        }
+
+        .services .box .flex {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%
+        }
+
+        .services .box .flex .container {
+            height: 212px;
+            width: 100%;
+        }
+
+        .suppliers {
+            height: 8.6rem;
+            width: 90%;
+            margin: 0px auto;
+            display: block;
+            overflow: hidden;
+
+        }
+
+        .suppliers .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            list-style-type: none;
+            gap: 15px 15px;
+            margin: 10px 0px 0px 0px;
+        }
+
+        .suppliers .grid .container {
+            width: 221px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            gap: 20px
+        }
     }
 
     @media (min-width:1440px) {
@@ -776,5 +1296,301 @@
         .link_btn {
             top: 20px;
             left: 45px
+        }
+
+        .offer_section {
+            width: 90%;
+            height: 15rem;
+            background-color: #FFFFFF;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .offer_section .box1 {
+            width: 28%;
+            height: 100%;
+            padding: 50px 0px 0px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            position: relative;
+            border-bottom: 1px solid #DEE2E7;
+        }
+
+        .offer_section .offerone {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1C1C1C;
+
+        }
+
+        .offer_section .offertwo {
+            color: #8B96A5;
+            position: relative;
+        }
+
+        #timer {
+            width: 198px;
+            height: 50px;
+            left: 0;
+            top: 0;
+        }
+
+        .offer_section .box2 {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        .Items {
+            width: 90%;
+            height: 257px;
+            margin: 20px auto;
+            display: flex;
+
+        }
+
+        .Items .box1 {
+            width: 25%;
+            height: 100%;
+            background-image: url("public/images/image 92.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .home {
+            width: 100px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #1C1C1C;
+            margin-top: 10px;
+            position: relative;
+        }
+
+        .Items .box1 .btn {
+            text-decoration: none;
+            position: relative;
+            top: 18px
+        }
+
+        .Items .data {
+            height: 100%;
+            width: 50%;
+            position: relative;
+            top: 0;
+            left: 0;
+            overflow: unset;
+        }
+
+        .Items .data .list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            list-style-type: none;
+            box-sizing: border-box;
+            margin: 0
+        }
+
+        .Items2 {
+            width: 90%;
+            height: 257px;
+            margin: 20px auto;
+            display: flex;
+        }
+
+        .Items2 .box1 {
+            width: 25%;
+            height: 100%;
+            padding: 20px 0px 0px 20px;
+            background-image: url("public/images/image 98.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .Items2 .box1 .btn {
+            text-decoration: none;
+            position: relative;
+            top: 20px;
+        }
+
+        .Items2 .data {
+            height: 100%;
+            width: 50%;
+            position: relative;
+            top: 0;
+            overflow: unset;
+        }
+
+        .Items2 .data .list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            list-style-type: none;
+            box-sizing: border-box;
+            margin: 0
+        }
+
+        .supplier {
+            width: 90%;
+            height: 410px;
+        }
+
+        .supplier .left {
+            width: 40%;
+            font-size: 32px;
+            margin: 40px 0px 0px 40px;
+        }
+
+        .supplier .left .L_span {
+
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .right {
+            width: 30.6rem;
+            height: 21.6rem;
+            background-color: #ffffff;
+            margin: 30px 40px 0px 0px;
+            display: block;
+        }
+
+        .supplier {
+            width: 90%;
+            height: 410px;
+        }
+
+        .supplier .left {
+            width: 40%;
+            font-size: 32px;
+            margin: 40px 0px 0px 40px;
+        }
+
+        .supplier .left .L_span {
+
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .right {
+            width: 30.6rem;
+            height: 21.6rem;
+            background-color: #ffffff;
+            margin: 30px 40px 0px 0px;
+            display: block;
+        }
+
+        .supplier {
+            width: 90%;
+            height: 410px;
+        }
+
+        .supplier .left {
+            width: 40%;
+            font-size: 32px;
+            margin: 40px 0px 0px 40px;
+        }
+
+        .supplier .left .L_span {
+
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .right {
+            width: 30.6rem;
+            height: 21.6rem;
+            background-color: #ffffff;
+            margin: 30px 10px 0px 0px;
+            display: block;
+        }
+
+        .Recomendation {
+            width: 90%;
+            height: 696px;
+            margin: 30px auto 0px;
+        }
+
+        .Recomendation .item_grid {
+            height: 300px;
+            margin-top: 24px;
+            overflow: unset;
+        }
+
+        .Recomendation .item_grid .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            padding: 10px 0px 0px 0px;
+            gap: 10px 10px;
+            list-style-type: none;
+            box-sizing: border-box;
+        }
+
+        .Recomendation .item_grid .grid .grid_container {
+            width: 100%;
+            height: 310px;
+            border: 1px solid #DEE2E7;
+            position: relative;
+            left: 0;
+        }
+
+        .Recomendation .item_grid .grid .grid_container .imgBox {
+            height: 70%;
+            width: 100%;
+        }
+
+        .services {
+            width: 90%;
+            height: 17rem;
+            display: block;
+        }
+
+        .services .box {
+            height: 210px;
+            width: 100%;
+            margin-top: 24px;
+            overflow: hidden;
+        }
+
+        .services .box .flex {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%
+        }
+
+        .services .box .flex .container {
+            height: 212px;
+            width: 100%;
+        }
+
+        .suppliers {
+            height: 8.6rem;
+            width: 90%;
+            margin: 0px auto;
+            display: block;
+            overflow: hidden;
+
+        }
+
+        .suppliers .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            list-style-type: none;
+            gap: 15px 35px;
+            margin: 10px 0px 0px 0px;
+        }
+
+        .suppliers .grid .container {
+            width: 221px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            gap: 20px
         }
     }

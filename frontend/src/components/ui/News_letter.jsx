@@ -19,16 +19,7 @@ export function Newsletter() {
           >
             Subcribe to our Newsletter
           </p>
-          <p
-            style={{
-              color: "#606060",
-              textAlign: "center",
-              width: "300px",
-              position: "relative",
-              left: "30px",
-            }}
-            className="text1"
-          >
+          <p style={{}} className="text1">
             Get daily news on upcoming offers from many suppliers all over the
             world
           </p>
