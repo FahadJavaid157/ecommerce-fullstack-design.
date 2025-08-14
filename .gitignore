@@ -1,0 +1,43 @@
+# -----------------------------
+# Node.js / Backend
+# -----------------------------
+/backend/node_modules/
+/backend/npm-debug.log*
+/backend/yarn-debug.log*
+/backend/yarn-error.log*
+/backend/.env
+/backend/.env.local
+/backend/.env.development.local
+/backend/.env.test.local
+/backend/.env.production.local
+/backend/dist
+/backend/build
+/backend/.DS_Store
+
+# -----------------------------
+# React / Frontend
+# -----------------------------
+# Node modules
+/frontend/node_modules/
+
+# Production build
+/frontend/build/
+
+# Env files
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# Logs
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+
+# MacOS
+.DS_Store
+
+# Vercel / Netlify files (optional)
+/.vercel/
+/.netlify/
