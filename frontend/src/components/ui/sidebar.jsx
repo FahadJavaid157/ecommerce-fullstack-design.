@@ -19,7 +19,7 @@ export function Sidebar() {
     <>
       <section className="sidebar">
         <div className="box1" ref={box1} onClick={handleIcon}>
-          <div className="container">
+          <div className="Side_container">
             <div className="heading">Categories</div>
             <div className="icon" ref={Icon}>
               ^
@@ -33,6 +33,81 @@ export function Sidebar() {
             <Link className="link see">See all</Link>
           </div>
         </div>
+        <div className="box2">
+          <h2>Brands</h2>
+          <span>
+            <input
+              type="checkbox"
+              name="samsung"
+              id="samsung"
+              value="samsung"
+            />
+            <label htmlFor="samsung">Samsung</label>
+          </span>
+          <span>
+            <input
+              type="checkbox"
+              name="samsung"
+              id="samsung"
+              value="samsung"
+            />
+            <label htmlFor="samsung">Samsung</label>
+          </span>
+          <span>
+            <input
+              type="checkbox"
+              name="samsung"
+              id="samsung"
+              value="samsung"
+            />
+            <label htmlFor="samsung">Samsung</label>
+          </span>
+          <span>
+            <input
+              type="checkbox"
+              name="samsung"
+              id="samsung"
+              value="samsung"
+            />
+            <label htmlFor="samsung">Samsung</label>
+          </span>
+          <span>
+            <input
+              type="checkbox"
+              name="samsung"
+              id="samsung"
+              value="samsung"
+            />
+            <label htmlFor="samsung">Samsung</label>
+          </span>
+        </div>
+        <div className="box3">
+          <h2>Feature</h2>
+          <span>
+            <input type="checkbox" name="Metal" id="Metal" value="Metal" />
+            <label htmlFor="Metal">Metal</label>
+          </span>
+          <span>
+            <input type="checkbox" name="Metal" id="Metal" value="Metal" />
+            <label htmlFor="Metal">Metal</label>
+          </span>{" "}
+          <span>
+            <input type="checkbox" name="Metal" id="Metal" value="Metal" />
+            <label htmlFor="Metal">Metal</label>
+          </span>{" "}
+          <span>
+            <input type="checkbox" name="Metal" id="Metal" value="Metal" />
+            <label htmlFor="Metal">Metal</label>
+          </span>
+          <span>
+            <input type="checkbox" name="Metal" id="Metal" value="Metal" />
+            <label htmlFor="Metal">Metal</label>
+          </span>
+        </div>
+        <div className="box4">Price Range</div>
+        <div className="box4">Price Range</div>
+        <div className="box4">Price Range</div>
+        <div className="box4">Price Range</div>
       </section>
     </>
   );

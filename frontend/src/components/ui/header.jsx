@@ -43,7 +43,7 @@ export function Header() {
           <input type="submit" value="Search" className="search-btn" />
         </div>
         <div className="right">
-          <Link to="/profile" className="link">
+          <Link to="/login" className="link">
             <BiSolidUser className="icon" />
             <p className="header-text">Profile</p>
           </Link>
@@ -55,7 +55,7 @@ export function Header() {
             <FaHeart className="icon" />
             <p className="header-text">Orders</p>
           </Link>
-          <Link to="/profile" className="link">
+          <Link to="/cart" className="link">
             <MdShoppingCart className="icon" />
             <p className="header-text">My cart</p>
           </Link>

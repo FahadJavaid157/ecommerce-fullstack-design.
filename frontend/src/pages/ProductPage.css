@@ -1,0 +1,195 @@
+.product-page {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* --- Top Section --- */
+.product-top {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.image-section {
+    flex: 1;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.thumbnail-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumb {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ddd;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.info-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.product-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.price-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.new-price {
+    font-size: 1.4rem;
+    color: #e60023;
+    font-weight: bold;
+}
+
+.discount {
+    background: #ff4d4f;
+    color: white;
+    padding: 2px 8px;
+    font-size: 0.85rem;
+    border-radius: 4px;
+}
+
+.rating {
+    margin-top: 8px;
+    color: #555;
+}
+
+.specs {
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+.btn-row {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.add-cart {
+    background: #ff4d4f;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.buy-now {
+    background: #4f46e5;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* --- Tabs --- */
+.tabs {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-top: 40px;
+}
+
+.tab {
+    background: none;
+    border: none;
+    padding: 10px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tab.active {
+    color: #4f46e5;
+    border-bottom: 2px solid #4f46e5;
+}
+
+.tab-content {
+    padding: 15px 0;
+    color: #555;
+}
+
+/* --- Related Products --- */
+.related-title {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.related-row {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.related-card {
+    min-width: 150px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    background: #fff;
+}
+
+.related-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+}
+
+.rel-name {
+    font-size: 0.85rem;
+    margin-top: 8px;
+    color: #333;
+}
+
+.rel-price {
+    color: #e60023;
+    font-weight: bold;
+}
+
+/* --- Discount Banner --- */
+.discount-banner {
+    background: linear-gradient(to right, #2563eb, #3b82f6);
+    color: white;
+    margin-top: 40px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.discount-banner button {
+    background: white;
+    color: #2563eb;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}

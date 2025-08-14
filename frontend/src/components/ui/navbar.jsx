@@ -7,7 +7,7 @@ export function Navbar() {
         <div className="nav-left">
           <ul className="list1">
             <li>
-              <Link className="nav-link ">
+              <Link to="/display" className="nav-link ">
                 <img
                   src="/public/images/Vector.png"
                   alt="hamburger"
